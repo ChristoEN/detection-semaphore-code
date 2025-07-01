@@ -1,0 +1,72 @@
+# --- Backend (Python) ---
+# Environment
+semaphore-env/
+venv/
+.env
+*.env
+
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+
+# Model files (exclude large binaries)
+model/
+*.pkl
+*.pth
+*.pt
+*.h5
+
+# Logs and databases
+*.log
+*.sqlite
+
+# IDE-specific
+.vscode/
+.idea/
+
+# --- Frontend (Next.js) ---
+# Dependencies
+node_modules/
+.next/
+out/
+
+# Build files
+*.next
+.next/**
+
+# Cache
+.cache/
+
+# Environment variables
+.env.local
+.env.development
+.env.production
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# System files
+.DS_Store
+*.swp
+*.swo
+
+# Testing
+coverage/
+
+# --- Umum ---
+# File hasil build
+dist/
+build/
+
+# File sementara
+*.tmp
+*.temp
+
+# File besar (contoh: dataset)
+*.zip
+*.tar.gz
+*.mp4
+*.jpg
+*.png
