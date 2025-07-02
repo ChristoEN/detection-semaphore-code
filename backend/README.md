@@ -7,4 +7,9 @@
 ```bash (contoh)
 python -m venv semaphore-env
 semaphore-env\Scripts\activate
+
 ```
+
+<!-- Runn -->
+
+uvicorn main:app --reload
