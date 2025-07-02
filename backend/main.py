@@ -1,6 +1,9 @@
 from fastapi import FastAPI, UploadFile, File
 from fastapi.middleware.cors import CORSMiddleware
-from utils import predict_image
+import sys
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), 'utils'))
+from predict import predict_image
 
 app = FastAPI()
 

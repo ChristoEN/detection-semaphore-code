@@ -6,15 +6,13 @@ import mediapipe as mp
 from io import BytesIO
 from PIL import Image
 
-model_path = "./model/semaphore_classification_mobilenetv2.h5"
-model = load_model(model_path)
-le = joblib.load("label_encoder_semaphore.pkl")
+model = load_model("./model/semaphore_classification_mobilenetv2.h5")
+le = joblib.load("./model/label_encoder_semaphore.pkl")
 
 mp_pose = mp.solutions.pose
 pose = mp_pose.Pose()
 
 async def predict_image(file):
-
     contents = await file.read()
     pil_image = Image.open(BytesIO(contents)).convert("RGB")
     image_np = np.array(pil_image)
@@ -45,9 +43,9 @@ async def predict_image(file):
         pred_index = np.argmax(pred)
         confidence = float(pred[pred_index]) * 100
 
-        predicted_number = le.classes_[pred_index]  
+        predicted_number = le.classes_[pred_index]
         try:
-            predicted_char = chr(64 + int(predicted_number))
+            predicted_char = chr(64 + int(predicted_number)) 
         except:
             predicted_char = str(predicted_number)
 
