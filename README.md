@@ -21,4 +21,4 @@ It allows users to:
 - **Pose Detection:** MediaPipe Pose
 - **ML Model:** MobileNetV2 trained with TensorFlow/Keras
 - **Frontend Hosting (CS):** Vercel
-- **Backend Hosting (CS):** Liat nanti
+- **Backend Hosting (CS):** Lom tau, liat nanti
