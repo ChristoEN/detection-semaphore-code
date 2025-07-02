@@ -1,1 +1,1 @@
-🚩 Real-Time Semaphore Gesture Detection
+#Real-Time Semaphore Gesture Detection
