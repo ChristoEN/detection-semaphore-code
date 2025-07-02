@@ -20,10 +20,5 @@ It allows users to:
 - **Backend:** FastAPI + TensorFlow + MediaPipe
 - **Pose Detection:** MediaPipe Pose
 - **ML Model:** MobileNetV2 trained with TensorFlow/Keras
-- **Frontend Hosting (Optional):** Vercel
-- **Backend Hosting (Optional):** Railway / Hugging Face Spaces / Localhost
-
----
-
-## Project Structure
-
+- **Frontend Hosting (CS):** Vercel
+- **Backend Hosting (CS):** Railway / Hugging Face Spaces / Localhost
