@@ -32,9 +32,9 @@
 
 ## 📂 Project Structure
 
-semaphore-gesture-detection/
-├── frontend/ # Next.js app for UI and webcam integration
-├── backend/ # FastAPI server for ML inference
-├── model/ # Pre-trained ML model (MobileNetV2 .h5 or .tflite)
-├── dataset/ # (Optional) Training dataset (A-Z semaphore gesture images)
-├── README.md # Project documentation
+```text
+├── frontend/         # Next.js app for UI and webcam integration
+├── backend/          # FastAPI server for ML inference
+├── model/            # Pre-trained ML model (MobileNetV2 .h5 or .tflite)
+├── dataset/          # (Optional) Training dataset (A–Z semaphore gesture images)
+├── README.md         # Project documentation
