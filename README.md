@@ -1,24 +1,34 @@
-# Real-Time Semaphore Gesture Detection
+# 🧠 Real-Time Semaphore Gesture Detection
 
-## Project Overview
+## 📌 Project Overview
 
-This project is a **Real-Time Semaphore Gesture Recognition App** built with **MediaPipe Pose**, **TensorFlow MobileNetV2**, **FastAPI (Python)** for the backend, and **Next.js (React + TypeScript)** for the frontend.
+**Real-Time Semaphore Gesture Recognition App** is a real-time gesture detection system that uses computer vision and machine learning technologies to recognize semaphore arm signals from live webcam input and classify them into letters A–Z.
 
-It allows users to:
+### ✅ Key Features
 
-✅ Capture real-time webcam video  
-✅ Send frames to the backend for gesture classification  
-✅ Display the predicted gesture label (A-Z) with a bounding box overlay  
-✅ Support both **manual** and **auto capture** (every 5 seconds)  
-✅ Backend runs locally (or can be deployed), with the ML model stored locally or loaded from Google Drive  
+- 📸 Capture real-time video from the user's webcam
+- 🧠 Send frames to the backend for semaphore gesture classification
+- 🏷️ Display predicted letter label (A–Z) with a bounding box overlay
+- ⚙️ Supports two capture modes:
+  - Manual Capture
+  - Auto Capture (every 5 seconds)
+- 🧳 Backend can run locally or be deployed to the cloud
+- 💾 ML model can be stored locally or loaded from Google Drive
 
 ---
 
-## Tech Stack
+## 🛠️ Tech Stack
 
-- **Frontend:** Next.js (React + TypeScript) + Material UI
-- **Backend:** FastAPI + TensorFlow + MediaPipe
-- **Pose Detection:** MediaPipe Pose
-- **ML Model:** MobileNetV2 trained with TensorFlow/Keras
-- **Frontend Hosting (CS):** Vercel
-- **Backend Hosting (CS):** Lom tau, liat nanti
+| Layer         | Tools/Frameworks                                        |
+|---------------|---------------------------------------------------------|
+| Frontend      | [Next.js](https://nextjs.org/) + React + TypeScript + Material UI |
+| Backend       | [FastAPI](https://fastapi.tiangolo.com/) + Python + TensorFlow |
+| Pose Detection| [MediaPipe Pose](https://developers.google.com/mediapipe/solutions/pose) |
+| Model         | CNN based on MobileNetV2 trained on Semaphore gesture dataset |
+| Hosting       | Frontend: [Vercel](https://vercel.com/)  |
+|               | Backend: ❓ *To be determined*              |
+
+---
+
+## 📂 Project Structure
+
